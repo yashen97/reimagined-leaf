@@ -9,10 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class controllerx {
+
 @RequestMapping("/pageone")
     public ModelAndView getPageone(){
     return new ModelAndView("page1.html");
 }
+
  @RequestMapping("/students")
     public String listStudents(HttpServletRequest request, Model model){
         return  "students";
